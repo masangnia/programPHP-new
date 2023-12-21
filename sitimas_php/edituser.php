@@ -1,4 +1,11 @@
-<html>
+<htm<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
 
     <body>
         <?php
@@ -7,7 +14,7 @@
             {
                 echo "Koneksi Gagal".mysqli_connect_error();
             }
-                $query = mysqli_query($conn, "SELECT * from user WHERE username='$_GET[username]'"); 
+                $query = mysqli_query($conn, "SELECT * from tbuser WHERE username='$_GET[username]'"); 
                 $row = mysqli_fetch_array($query); 
             ?>
 
@@ -15,7 +22,7 @@
                 <td>
                     <pre>
                         username: <input type="text" name="username" value="<?php echo $row['username']; ?>">
-                        pass: <input type="text" name="pass" value="<?php echo $row['pass']; ?>">
+                        pass    : <input type="text" name="pass"     value="<?php echo $row['pass']; ?>">
                         <input type="submit" value="Update"/>
                     </pre>
                 </td>

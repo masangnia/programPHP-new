@@ -20,7 +20,7 @@
 						<td width="400"><center><h1>DAFTAR USER</h1></center>
 						</td>
 					</tr>
-				<form method="post" action="Koneksiuser.php">
+				<form method="post" action="KoneksiUser.php">
 			</table>
 
 <table width="800" border="1" align="center" bgcolor="white">

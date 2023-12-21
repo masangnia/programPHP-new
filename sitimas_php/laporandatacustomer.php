@@ -5,7 +5,7 @@
 		if (mysqli_connect_errno()){
 			echo "koneksi Gagal".mysqli_connect_error();
 		}
-		$query = mysqli_query($conn,"SELECT * FROM tbuser");
+		$query = mysqli_query($conn,"SELECT * FROM tbcustomer");
 		?>
 
 		<center>
@@ -17,12 +17,15 @@
 			<b><h3> PT. SISTEM INFORMASI </h3>
 			Jl. Raya Serang Km.10 Bitung-Tangerang</b>
 			<hr>
-			<h3>LAPORAN DATA USER</h3>
+			<h3>LAPORAN DATA CUSTOMER</h3>
 			<table border="1" cellpadding="5" cellspacing="0" bgcolor="#999999">
 				<thead>
 					<tr>
-						<td><b>Nama User</td>
-						<td><b>Password</td>
+                        <td><b>Kode Customer</td>					
+						<td><b>Nama Customer</td>
+						<td><b>Telepon</td>
+						<td><b>Email</td>
+						<td><b>Alamat</td>
 					</tr>
 				</thead>
 			<tbody bgcolor="#ffffff">
@@ -30,9 +33,12 @@
 					while ($row=mysqli_fetch_array ($query))
 
 					{
-						echo"<tr>";
-							echo"<td>".$row['username']."</td>";
-							echo"<td>".$row['pass']."</td>";
+						echo"<tr>";						
+							echo"<td>".$row['kdcustomer']."</td>";
+							echo"<td>".$row['nmcustomer']."</td>";
+							echo"<td>".$row['tlp']."</td>";
+							echo"<td>".$row['email']."</td>";
+                            echo"<td>".$row['alamat']."</td>";
 						echo"<tr>";
 					}
 				?>
@@ -50,6 +56,6 @@
 			</span>
 			</div>
 		</table>
-		<a href="user.php">Klik disini Kembali ke Menu Utama</a>
+		<a href="menu.php">Klik disini Kembali ke Menu Utama</a>
 	</body>
 </html>

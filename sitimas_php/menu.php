@@ -26,7 +26,7 @@
  <li><a href="#">Master Data </a>
   <ul>
    <li><a href="barang.php">Data Barang</a></li>
-   <li><a href="">Data Customer</a></li>
+   <li><a href="customer.php">Data Customer</a></li>
 <li><a href="user.php">User</a></li>
   </ul>
  
@@ -38,16 +38,17 @@
  </li><li><a href="#">Perubahan Data</a>
   <ul>
    <li><a href="DaftarBarang.php">Edit Data Barang</a></li>
-   <li><a href="">Edit Data Customer</a></li>
-   <li><a href="Daftaruser.php">Edit Data User</a></li>
+   <li><a href="daftarcustomer.php">Edit Data Customer</a></li>
+   <li><a href="daftaruser.php">Edit Data User</a></li>
    <li><a href="">Edit Data Persediaan</a></li>
   </ul>
  </li>
 
  <li><a href="#">Laporan</a>
   <ul>
-   <li><a href="LaporanDataBarang.php">Laporan Data Barang</a></li>
-   <li><a href="#">Laporan Data Customer</a></li>
+   <li><a href="laporanDataBarang.php">Laporan Data Barang</a></li>
+   <li><a href="laporandatacustomer.php">Laporan Data Customer</a></li>
+   <li><a href="laporandatauser.php">Laporan Data User</a></li>
 <li><a href="">Laporan persediaan Barang</a></li>
   </ul>
  </li>
